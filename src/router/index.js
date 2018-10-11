@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '@/components/Home'
+import EventList from '@/components/EventList'
+import EventPage from '@/components/EventPage'
+
+
 
 Vue.use(Router)
 
@@ -8,8 +12,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/EventList',
+      name: 'EventList',
+      component: EventList
+    },
+    {
+      path: '/EventPage',
+      name: 'EventPage',
+      component: EventPage
     }
   ]
 })
